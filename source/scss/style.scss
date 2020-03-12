@@ -1,0 +1,83 @@
+@import "_variables";
+
+body {
+  font-family: $serif-fonts;
+  font-size: $font-base-size;
+}
+
+input, textarea {
+  font-family: $serif-fonts;
+}
+
+h6 {
+  font-size: $font-base-size + $font-grow-size;
+  color: $color2;
+}
+
+h5 {
+  font-size: $font-base-size + 2 * $font-grow-size;
+  color: $color1;
+}
+
+h4 {
+  font-size: $font-base-size + 3 * $font-grow-size;
+  color: $color4;
+}
+
+h3 {
+  font-size: $font-base-size + 4 * $font-grow-size;
+  color: $color3;
+}
+
+h2 {
+  font-size: $font-base-size + 5 * $font-grow-size;
+  color: $color2;
+}
+
+h1 {
+  font-size: $font-base-size + 6 * $font-grow-size;
+  color: $color1;
+}
+
+p {
+  color: $color2;
+  a {
+    color: $color4;
+    text-decoration: none;
+    &:hover {
+      color: darken($color4, 75%);
+    }
+  }
+  input[type="text"] {
+    border-radius: $borderRadius;
+    outline: none;
+  }
+  label {
+    padding-right: $font-base-size;
+  }
+  
+  textarea {
+    border-radius: $borderRadius;
+    outline: none;
+  }
+}
+
+img {
+  border-radius: $borderRadius;
+}
+
+figure {
+  background-color: lighten($color1, 70%);
+}
+
+tbody {
+  background-color: $color3;
+}
+thead {
+  background-color: complement($color: $color3);
+}
+
+td, th {
+  border: 2px black solid;
+  padding: 5px;
+}
